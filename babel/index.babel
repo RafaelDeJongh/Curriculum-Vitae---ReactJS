@@ -1,0 +1,6 @@
+ReactDOM.render(
+  /*https://github.com/cssivision/qrcode-react
+  <QRCode value="http://facebook.github.io/react/" />,*/
+	<h1>QR CODE</h1>,
+  	document.getElementById("qr-code")
+);
