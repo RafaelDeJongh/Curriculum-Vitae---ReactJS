@@ -328,7 +328,7 @@ var eContent = [{
 		yearEnd: "2017"
 	}, {
 		id: 6,
-		work: "JohannesDeJongh.ca",
+		work: "JohannesDeJongh.com",
 		description: "WordPress portfolio website for my brother.",
 		yearStart: "",
 		yearEnd: "2017"

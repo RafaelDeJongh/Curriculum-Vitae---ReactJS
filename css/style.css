@@ -50,7 +50,7 @@ aside {
   color: #fff;
 }
 
-@media screen and (max-width: 880px) {
+@media print {
   aside {
     max-height: 297mm;
   }

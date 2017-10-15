@@ -50,7 +50,7 @@ aside{
 	align-content:start;
 	color:$primary-background-color;
 }
-@media screen and (max-width:880px) {
+@media print{
 	aside{max-height:297mm}
 }
 #profile-fig{padding:1vw}
