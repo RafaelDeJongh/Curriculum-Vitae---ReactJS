@@ -108,7 +108,7 @@ const pContent = [
 			{
 				birthday:"12 September 1994",
 				nationality:"Belgian",
-				location:"Zandhoven,Antwerp",
+				location:"Antwerp, Belgium",
 				phone:"+32 485 34 62 49",
 				mail:"rafaeldejongh@live.be",
 				website:"www.rafaeldejongh.com"
@@ -158,7 +158,7 @@ const eContent = [
 			{
 				id:2,
 				work:"UKLederwaren.be",
-				description:"WordPress WooCommerce Webshop for a B2B company.",
+				description:"WordPress WooCommerce Webshop with B2B functionality.",
 				yearStart:"",
 				yearEnd:"2017"
 			},
@@ -172,42 +172,42 @@ const eContent = [
 			{
 				id:4,
 				work:"DDCare.be",
-				description:"WordPress website for a Belgian dentist.",
+				description:"WordPress website for a Belgian dentist practice.",
 				yearStart:"",
 				yearEnd:"2017"
 			},
 			{
 				id:5,
 				work:"Beeple.eu",
-				description:"WordPress website for a startup company as an internship assingment.",
-				yearStart:"",
-				yearEnd:"2017"
+				description:"WordPress website for as a collaborated internship assingment.",
+				yearStart:"02",
+				yearEnd:"03/2017"
 			},
 			{
 				id:6,
 				work:"JohannesDeJongh.com",
-				description:"WordPress portfolio website for my brother.",
+				description:"WordPress portfolio website for a cinematographer and motion Graphics Artist.",
 				yearStart:"",
 				yearEnd:"2017"
 			},
 			{
 				id:7,
 				work:"Safegold.ca",
-				description:"WordPress website for a physical store in Canada.",
+				description:"WordPress website for a physical gold store in Canada.",
 				yearStart:"",
 				yearEnd:"2017"
 			},
 			{
 				id:8,
 				work:"Ninavanrompaey.be",
-				description:"Reacreation of a HTML5 & CSS3 website in WordPress.",
+				description:"WordPress portfolio website from a Belgian actrice.",
 				yearStart:"",
 				yearEnd:"2017"
 			},
 			{
 				id:9,
 				work:"Carlino-FGS.com",
-				description:"WordPress webshop made with WooCommerce.",
+				description:"WordPress WooCommerce webshop with a focus on a POS system.",
 				yearStart:"",
 				yearEnd:"2017"
 			},
@@ -221,7 +221,7 @@ const eContent = [
 			{
 				id:11,
 				work:"Johanvanhaevre.be",
-				description:"WordPress website with a focus on galleries.",
+				description:"WordPress website of a Belgian Artist with a focus on galleries.",
 				yearStart:"",
 				yearEnd:"2016"
 			},
@@ -235,28 +235,28 @@ const eContent = [
 			{
 				id:13,
 				work:"Smartgoldhamilton.ca",
-				description:"WordPress website for a physical store in Canada.",
+				description:"WordPress website for a physical gold store in Canada.",
 				yearStart:"",
 				yearEnd:"2016"
 			},
 			{
 				id:14,
 				work:"jojoproductions.net",
-				description:"WordPress website with specifc requirements.",
+				description:"WordPress website made for a non profit organisation.",
 				yearStart:"",
 				yearEnd:"2015"
 			},
 			{
 				id:15,
 				work:"Steam Workshop Paid Mods: Gifts of Akatosh",
-				description:"A personal ollaboration with Valve and Bethesda to create mods for Skyrim.",
+				description:"A personal collaboration with Valve and Bethesda to create mods for Skyrim.",
 				yearStart:"",
 				yearEnd:"2015"
 			},
 			{
 				id:16,
 				work:"Machinefloor.com",
-				description:"Head of 3D Art, Moderator.",
+				description:"Head of 3D Art and Moderator.",
 				yearStart:"2013",
 				yearEnd:"Present"
 			},
@@ -269,23 +269,20 @@ const eContent = [
 				{id:3,item:"Sass/Less"},
 				{id:4,item:"JavaScript"},
 				{id:5,item:"jQuery"},
-				{id:6,item:"ExpressJS"},
-				{id:7,item:"NodeJS"},
-				{id:8,item:"VueJS"},
-				{id:9,item:"PHP"},
-				{id:10,item:"MySQL"},
-				{id:11,item:"WordPress"},
-				{id:12,item:"WooCommerce"},
-				{id:13,item:"SEO/SMO/SME"},
-				{id:14,item:"Security Optimisation"},
-				{id:15,item:"Server Configuration"},
+				{id:6,item:"PHP"},
+				{id:7,item:"MySQL"},
+				{id:8,item:"WordPress"},
+				{id:9,item:"WooCommerce"},
+				{id:10,item:"SEO/SMO/SME"},
+				{id:11,item:"Security Optimisation"},
+				{id:12,item:"Server Configuration"},
 			],
 			cListRT:"Software",
 			cListR:[
-				{id:1,item:"Notepad++"},
-				{id:2,item:"Photoshop"},
-				{id:3,item:"Illustrator"},
-				{id:4,item:"DreamWeaver"},
+				{id:1,item:"XAMPP"},
+				{id:2,item:"Notepad++"},
+				{id:3,item:"Photoshop"},
+				{id:4,item:"Illustrator"},
 				{id:5,item:"Premiere Pro"},
 				{id:6,item:"After Effects"},
 				{id:7,item:"InDesign"},
@@ -298,4 +295,4 @@ const eContent = [
 		}]
 	}
 ];
-ReactDOM.render(<CV pContent={pContent} eContent={eContent} />,document.getElementById("cv"));
+ReactDOM.render(<CV pContent={pContent} eContent={eContent} />,document.getElementById("cv"));  

@@ -39,7 +39,7 @@ main {
 -------------*/
 aside {
   background-color: #1e1f21;
-  width: 25vw;
+  width: 100%;
   height: 100%;
   position: relative;
   display: grid;
@@ -353,7 +353,6 @@ article section#knowledge section div {
 article section#knowledge section div h3 {
   margin-bottom: 2vw;
   color: #900;
-  text-align: center;
   font-variant: small-caps;
 }
 
@@ -365,7 +364,7 @@ article section#knowledge section div ul li {
 article section#knowledge section div ul li:before {
   font-family: "FontAwesome";
   content: "\f0da";
-  margin-right: 4px;
+  margin-right: 5px;
 }
 
 /*Links
