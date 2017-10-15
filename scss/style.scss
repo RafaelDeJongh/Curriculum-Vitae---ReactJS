@@ -146,7 +146,7 @@ aside section#personalia ul li:after{
 #p-gsm:after{content:"\f10b"}
 #p-mail:after{content:"\f0e0"}
 #p-web:after{content:"\f0c1"}
-aside section h4{font-size:1.5vw;width:20%;margin:0}
+aside section h4{font-size:1.5vw;margin:0}
 /*Progress*/
 .p-languages{
 	margin:2.5vw 0;
@@ -154,16 +154,40 @@ aside section h4{font-size:1.5vw;width:20%;margin:0}
 	grid-template-columns:20% 100%;
 	align-items:center;
 }
+.p-progress{
+	position:relative;
+	margin-left:3vw;
+	width:63%;
+	height:2vw;
+}
+.p-progress h5 {
+	position:absolute;
+	width:100%;
+	text-align:center;
+   line-height:.2;
+	z-index:9;
+	text-shadow: 
+		rgb(30,31,33) 2px 0px 0px, 
+		rgb(30,31,33) 1.75517px 0.958851px 0px, 
+		rgb(30,31,33) 1.0806px 1.68294px 0px, 
+		rgb(30,31,33) 0.141474px 1.99499px 0px, 
+		rgb(30,31,33) -0.832294px 1.81859px 0px, 
+		rgb(30,31,33) -1.60229px 1.19694px 0px, 
+		rgb(30,31,33) -1.97998px 0.28224px 0px, 
+		rgb(30,31,33) -1.87291px -0.701566px 0px, 
+		rgb(30,31,33) -1.30729px -1.5136px 0px, 
+		rgb(30,31,33) -0.421592px -1.95506px 0px, 
+		rgb(30,31,33) 0.567324px -1.91785px 0px, 
+		rgb(30,31,33) 1.41734px -1.41108px 0px, 
+		rgb(30,31,33) 1.92034px -0.558831px 0px;
+}
 progress{
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	appearance:none;
 	border:1px solid $primary-background-color;
-	width:60%;
 	height:2vw;
-	position:relative;
 	background-color:$aside-background-color;
-	margin-left:3vw;
 	border-radius:50vw
 }
 progress::-webkit-progress-bar{background-color:$aside-background-color;color:$primary-background-color;border-radius:50vw}
