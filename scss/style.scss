@@ -17,6 +17,7 @@ $aside-text-color:$primary-background-color;
 }
 body{
 	width:100%;
+	height:initial;
 	min-height:100%;
 	background-color:$primary-background-color;
 	color:$aside-background-color;
@@ -48,6 +49,9 @@ aside{
 	align-self:start;
 	align-content:start;
 	color:$primary-background-color;
+}
+@media screen and (max-width:880px) {
+	aside{max-height:297mm}
 }
 #profile-fig{padding:1vw}
 #profile-img{border-radius:100%;border:.5vw solid $primary-color}

@@ -14,6 +14,7 @@
 
 body {
   width: 100%;
+  height: initial;
   min-height: 100%;
   background-color: #fff;
   color: #1e1f21;
@@ -49,6 +50,11 @@ aside {
   color: #fff;
 }
 
+@media screen and (max-width: 880px) {
+  aside {
+    max-height: 297mm;
+  }
+}
 #profile-fig {
   padding: 1vw;
 }
