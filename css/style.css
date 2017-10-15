@@ -1,10 +1,23 @@
-/*Variables
--------------*/
 /*Main
 -------------*/
 @page {
   size: A4;
 }
+@media print {
+  aside {
+    max-height: 297mm;
+  }
+
+  .p-progress h5 {
+    -webkit-filter: drop-shadow(1px 0 0 #1e1f21) drop-shadow(-1px 0px 0 #1e1f21) drop-shadow(0 1px 0 #1e1f21) drop-shadow(0px -1px 0 #1e1f21);
+  }
+}
+html {
+  -webkit-print-color-adjust: exact;
+  -webkit-filter: opacity(1);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
 #cv {
   width: 210mm;
   height: 297mm;
@@ -50,11 +63,6 @@ aside {
   color: #fff;
 }
 
-@media print {
-  aside {
-    max-height: 297mm;
-  }
-}
 #profile-fig {
   padding: 1vw;
 }
@@ -215,7 +223,7 @@ aside section h4 {
   text-align: center;
   line-height: .2;
   z-index: 9;
-  text-shadow: #1e1f21 2px 0px 0px, #1e1f21 1.75517px 0.95885px 0px, #1e1f21 1.0806px 1.68294px 0px, #1e1f21 0.14147px 1.99499px 0px, #1e1f21 -0.83229px 1.81859px 0px, #1e1f21 -1.60229px 1.19694px 0px, #1e1f21 -1.97998px 0.28224px 0px, #1e1f21 -1.87291px -0.70157px 0px, #1e1f21 -1.30729px -1.5136px 0px, #1e1f21 -0.42159px -1.95506px 0px, #1e1f21 0.56732px -1.91785px 0px, #1e1f21 1.41734px -1.41108px 0px, #1e1f21 1.92034px -0.55883px 0px;
+  text-shadow: #1e1f21 2px 0 0, #1e1f21 1.75517px 0.95885px 0, #1e1f21 1.0806px 1.68294px 0, #1e1f21 0.14147px 1.99499px 0, #1e1f21 -0.83229px 1.81859px 0, #1e1f21 -1.60229px 1.19694px 0, #1e1f21 -1.97998px 0.28224px 0, #1e1f21 -1.87291px -0.70157px 0, #1e1f21 -1.30729px -1.5136px 0, #1e1f21 -0.42159px -1.95506px 0, #1e1f21 0.56732px -1.91785px 0, #1e1f21 1.41734px -1.41108px 0, #1e1f21 1.92034px -0.55883px 0;
 }
 
 progress {
