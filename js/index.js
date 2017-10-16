@@ -224,17 +224,17 @@ function CV(props) {
 								null,
 								info.cListLT
 							),
-							info.cListL.map(function (info) {
-								return React.createElement(
-									"ul",
-									{ key: info.id },
-									React.createElement(
+							React.createElement(
+								"ul",
+								null,
+								info.cListL.map(function (info) {
+									return React.createElement(
 										"li",
-										null,
+										{ key: info.id },
 										info.item
-									)
-								);
-							})
+									);
+								})
+							)
 						);
 					}),
 					info.cBoxFooter.map(function (info) {
@@ -246,17 +246,17 @@ function CV(props) {
 								null,
 								info.cListRT
 							),
-							info.cListR.map(function (info) {
-								return React.createElement(
-									"ul",
-									{ key: info.id },
-									React.createElement(
+							React.createElement(
+								"ul",
+								null,
+								info.cListR.map(function (info) {
+									return React.createElement(
 										"li",
-										null,
+										{ key: info.id },
 										info.item
-									)
-								);
-							})
+									);
+								})
+							)
 						);
 					})
 				)
@@ -346,7 +346,7 @@ var eContent = [{
 		work: "Carlino-FGS.com",
 		description: "WordPress WooCommerce webshop with a focus on a POS system.",
 		yearStart: "",
-		yearEnd: "06/2017"
+		yearEnd: "05/2017"
 	}, {
 		id: 7,
 		work: "Beeple.eu",

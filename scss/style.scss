@@ -128,27 +128,31 @@ aside section#personalia ul li{
 	margin:5vw 2vw;
 	position:relative;
 }
-aside section#personalia ul li:before{
+/*aside section#personalia ul li:before{
 	content:"\2B23";
 	content:"\2B22";
 	font-size:6vw;
 	position:absolute;
 	left:-5vw;
 	top:-2.2vw;
-}
+}*/
 aside section#personalia ul li:after{
 	font-family:"FontAwesome";
 	color:#1e1f21;
 	position:absolute;
 	display:flex;
-	top:-.7vw;
-	left:-4.1vw;
+	top:-1.5vw;
+	left:-5vw;
 	font-size:2.2vw;
-	width:3vw;
-	height:3vw;
+	width:4.5vw;
+	height:4.5vw;
 	text-align:center;
 	justify-content:center;
 	align-items:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-image:url(https://ap-images.ga/up/2017/10/16090350-hexagon.png);
+	background-image:url(https://ap-images.ga/up/2017/10/16090350-hexagon.svg);
 }
 #p-birth:after{content:"\f073"}
 #p-nationality:after{content:"\f183"}
@@ -204,17 +208,15 @@ progress::-webkit-progress-bar{background-color:$aside-background-color;color:$p
 progress::-webkit-progress-value{background:$primary-background-color;border-radius:50vw}
 progress::-moz-progress-bar{background:$primary-background-color;border-radius:50vw}
 progress::-ms-fill{background:$primary-background-color;border-radius:50vw}
-progress:after,
-progress:before{
-  position:absolute;
-  content:"";
-	display:none;
-  z-index:1;
-  top:-.13vw;  
-  width:0;
-  background:transparent;
-  border-top:1.05vw transparent solid; 
-  border-bottom:1.05vw transparent solid;
+/*progress:after,progress:before{
+	position:absolute;
+	content:"";
+	z-index:1;
+	top:-.13vw;  
+	width:0;
+	background:transparent;
+	border-top:1.05vw transparent solid; 
+	border-bottom:1.05vw transparent solid;
 }
 progress:before{
 	left:-1vw;
@@ -223,7 +225,7 @@ progress:before{
 progress:after{
 	right:-1vw;
 	border-left:1vw $primary-background-color solid; 
-}
+}*/
 /*QR*/
 #qr{text-align:center}
 #qr-code{margin:1.5vw}
@@ -288,6 +290,11 @@ article section .infItem h5{
 	font-size:2.5vw;
 	margin-right:2vw
 }
+article section .infItem ul{
+	display:grid;
+	grid-template-columns:50% 50%;
+	padding-left: 5px;
+}
 article section#knowledge section{
 	grid-template-columns:50% 50%;
 	grid-template-areas:"job programs";
@@ -295,12 +302,14 @@ article section#knowledge section{
 }
 article section#knowledge section div{
 	align-self:start;
-	justify-self:center
+}
+article section#knowledge section div.infoL{
+    border-right:.2vw solid $primary-color;
+    margin-right:2.1vw;
 }
 article section#knowledge section div h3{
 	margin-bottom:2vw;
 	color:$primary-color;
-
 	font-variant:small-caps;
 }
 article section#knowledge section div ul li{

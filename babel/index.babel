@@ -74,33 +74,33 @@ function CV(props) {
 					{info.cBoxFooter.map(info => (
 					<div className="infoL" key={info}>
 						<h3>{info.cListLT}</h3>
-						{info.cListL.map(info => (
-						<ul key={info.id}>
-							<li>{info.item}</li>
+						<ul>
+							{info.cListL.map(info => (
+								<li key={info.id}>{info.item}</li>
+							))}
 						</ul>
-						))}
 					</div>
 					))}
 					{info.cBoxFooter.map(info => (
 					<div className="infoR" key={info}>
 						<h3>{info.cListRT}</h3>
-						{info.cListR.map(info => (
-						<ul key={info.id}>
-							<li>{info.item}</li>
+						<ul>
+							{info.cListR.map(info => (
+								<li key={info.id}>{info.item}</li>
+							))}
 						</ul>
-						))}
 					</div>
 				))}
 				</section>
 			</section>
 		</article>
 	));
-return (
-	<main>
-		{personalia}
-		{experience}
-	</main>
-);
+	return (
+		<main>
+			{personalia}
+			{experience}
+		</main>
+	);
 }
 const pContent = [
 	{
@@ -198,7 +198,7 @@ const eContent = [
 				work:"Carlino-FGS.com",
 				description:"WordPress WooCommerce webshop with a focus on a POS system.",
 				yearStart:"",
-				yearEnd:"06/2017"
+				yearEnd:"05/2017"
 			},
 			{
 				id:7,
