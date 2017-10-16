@@ -1,5 +1,6 @@
-/*https://github.com/cssivision/qrcode-react
- <QRCode value="http://facebook.github.io/react/" />,*/
+var React = require('react');
+var ReactDOM = require('react-dom');
+var QRCode = require('qrcode.react');
 
 function CV(props) {
 	const personalia = props.pContent.map(info => (
@@ -16,7 +17,7 @@ function CV(props) {
 				{info.personalia.map(info => (
 					<ul key={info}>
 						<li id="p-birth">{info.birthday}</li>
-						<li id="p-nationality">{info.nationality}</li>
+						<li id="p-nationality">Nationality: {info.nationality}</li>
 						<li id="p-address">{info.location}</li>
 						<li id="p-gsm"><a href={`tel:${info.phone}`}>{info.phone}</a></li>
 						<li id="p-mail"><a href={`mailto:${info.mail}`}>{info.mail}</a></li>
@@ -37,8 +38,11 @@ function CV(props) {
 					))}
 			</section>
 			<footer id="qr">
-				<div id="qr-code"><img src={`${info.qr}`} alt="QR Code" /></div>
-				<a href="https://www.rafaeldejongh.com" target="_blank">www.RafaelDeJongh.com</a>
+				<div id="qr-code">
+					<img id="qr-logo" src={`${info.qrlogo}`} alt="QR Logo" />
+					<QRCode value={`mailto:${info.qr}`} bgColor="#1e1f21" fgColor="#fff" size={256} />
+				</div>
+				<a href={`${info.qr}`} target="_blank">{info.qr.replace(/(^\w+:|^)\/\//,'').replace(/\/+$/,'')}</a>
 			</footer>
 		</aside>
 	));
@@ -106,7 +110,7 @@ const pContent = [
 	{
 		name:"Rafaël De Jongh",
 		title:"Web Developer | 3D Artist",
-		picture:"//www.ap-valley-gdm.ga/wp-content/uploads/2017/09/RafaelDeJongh-512.jpg",
+		picture:"https://www.ap-valley-gdm.ga/wp-content/uploads/2017/09/RafaelDeJongh-512.jpg",
 		personalia:[
 			{
 				birthday:"12 September 1994",
@@ -122,7 +126,9 @@ const pContent = [
 			{id:2,language:"English",level:"C1",knowledge:85},
 			{id:3,language:"French",level:"A2",knowledge:40}
 		],
-		qr:"https://ap-images.ga/up/2017/10/15023120-QRCodeWithLogoWhite.svg"
+		qr:"https://www.RafaelDeJongh.com/",
+		qrlogo:"https://ap-images.ga/up/2017/10/16145828-logordj.svg"
+		//qr:"https://ap-images.ga/up/2017/10/15023120-QRCodeWithLogoWhite.svg"
 	}
 ];
 const eContent = [
@@ -217,7 +223,7 @@ const eContent = [
 			{
 				id:9,
 				work:"APCOA Parking",
-				description:"Parking attendant Antwerp.",
+				description:"Student job as a parking attendant in Antwerp.",
 				yearStart:"2014",
 				yearEnd:"2016"
 			},
@@ -280,4 +286,4 @@ const eContent = [
 		}]
 	}
 ];
-ReactDOM.render(<CV pContent={pContent} eContent={eContent} />,document.getElementById("cv"));  
+ReactDOM.render(<CV pContent={pContent} eContent={eContent} />,document.getElementById("cv"),);

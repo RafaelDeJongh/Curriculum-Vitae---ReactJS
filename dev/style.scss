@@ -20,6 +20,7 @@ $aside-text-color:$primary-background-color;
 html{
 	-webkit-print-color-adjust:exact;
 	-webkit-filter:opacity(1);
+	-webkit-filter:blur(0);
 	-webkit-transform:translate3d(0,0,0);
 }
 #cv{
@@ -233,6 +234,11 @@ progress:after{
 	text-transform:uppercase;
 	margin-bottom:2vw;
 	display:inline-block;
+}
+#qr-code canvas[style]{
+	width: 22vw!important;
+	height: 22vw!important;
+	max-width:100%
 }
 /*Information
 -------------*/
