@@ -355,54 +355,36 @@ var eContent = [{
 		yearEnd: "03/2017"
 	}, {
 		id: 8,
-		work: "Ninavanrompaey.be",
-		description: "WordPress portfolio website from a Belgian actress.",
-		yearStart: "",
-		yearEnd: "02/2017"
-	}, {
-		id: 9,
 		work: "JohannesDeJongh.com",
 		description: "WordPress portfolio website for a cinematographer and motion Graphics Artist.",
 		yearStart: "",
 		yearEnd: "01/2017"
 	}, {
-		id: 10,
+		id: 9,
 		work: "APCOA Parking",
 		description: "Parking attendant Antwerp.",
 		yearStart: "2014",
 		yearEnd: "2016"
 	}, {
-		id: 11,
-		work: "Johanvanhaevre.be",
-		description: "WordPress website of a Belgian Artist with a focus on galleries.",
-		yearStart: "",
-		yearEnd: "07/2016"
-	}, {
-		id: 12,
+		id: 10,
 		work: "Smartgoldhamilton.ca",
 		description: "WordPress website for a physical gold store in Canada.",
 		yearStart: "",
 		yearEnd: "07/2016"
 	}, {
-		id: 13,
+		id: 11,
 		work: "Oconceptstore.be",
 		description: "WordPress webshop made with WooCommerce.",
 		yearStart: "",
 		yearEnd: "06/2016"
 	}, {
-		id: 14,
-		work: "jojoproductions.net",
-		description: "WordPress website made for a nonprofit organisation.",
-		yearStart: "",
-		yearEnd: "08/2015"
-	}, {
-		id: 15,
+		id: 12,
 		work: "Steam Workshop Paid Mods: Gifts of Akatosh",
 		description: "A personal collaboration with Valve and Bethesda to create mods for Skyrim.",
 		yearStart: "",
 		yearEnd: "06/2015"
 	}, {
-		id: 16,
+		id: 13,
 		work: "Gamebanana.com",
 		description: "Head of 3D Art and Moderator.",
 		yearStart: "2013",
@@ -410,9 +392,9 @@ var eContent = [{
 	}],
 	cBoxFooter: [{
 		cListLT: "Web Development",
-		cListL: [{ id: 1, item: "HTML5" }, { id: 2, item: "CSS3" }, { id: 3, item: "Sass/Less" }, { id: 4, item: "JavaScript" }, { id: 5, item: "jQuery" }, { id: 6, item: "PHP" }, { id: 7, item: "MySQL" }, { id: 8, item: "WordPress" }, { id: 9, item: "WooCommerce" }, { id: 10, item: "SEO/SMO/SME" }, { id: 11, item: "Security Optimisation" }, { id: 12, item: "Server Configuration" }],
+		cListL: [{ id: 1, item: "HTML5" }, { id: 2, item: "CSS3" }, { id: 3, item: "Sass/Less" }, { id: 4, item: "JavaScript" }, { id: 5, item: "jQuery" }, { id: 6, item: "PHP" }, { id: 7, item: "MySQL" }, { id: 8, item: "WordPress" }, { id: 9, item: "WooCommerce" }, { id: 10, item: "SEO/SMO/SME" }],
 		cListRT: "Software",
-		cListR: [{ id: 1, item: "XAMPP" }, { id: 2, item: "Notepad++" }, { id: 3, item: "Photoshop" }, { id: 4, item: "Illustrator" }, { id: 5, item: "Premiere Pro" }, { id: 6, item: "After Effects" }, { id: 7, item: "InDesign" }, { id: 8, item: "Audition" }, { id: 9, item: "3DsMax" }, { id: 10, item: "Quixel Suite" }, { id: 11, item: "Marmoset Toolbag" }, { id: 12, item: "Microsoft Office" }]
+		cListR: [{ id: 1, item: "Notepad++" }, { id: 2, item: "Photoshop" }, { id: 3, item: "Illustrator" }, { id: 4, item: "Premiere Pro" }, { id: 5, item: "After Effects" }, { id: 6, item: "InDesign" }, { id: 7, item: "Audition" }, { id: 8, item: "3DsMax" }, { id: 9, item: "Quixel Suite" }, { id: 10, item: "Microsoft Office" }]
 	}]
 }];
 ReactDOM.render(React.createElement(CV, { pContent: pContent, eContent: eContent }), document.getElementById("cv"));

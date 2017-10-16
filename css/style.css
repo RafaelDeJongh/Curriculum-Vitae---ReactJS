@@ -375,7 +375,7 @@ article section#knowledge section div {
 
 article section#knowledge section div.infoL {
   border-right: 0.2vw solid #900;
-  margin-right: 2.1vw;
+  margin-right: 2vw;
 }
 
 article section#knowledge section div h3 {
@@ -386,7 +386,7 @@ article section#knowledge section div h3 {
 
 article section#knowledge section div ul li {
   list-style-type: none;
-  margin: 1vw 0;
+  margin: 0.6vw 0;
 }
 
 article section#knowledge section div ul li:before {
