@@ -1,11 +1,10 @@
 {
   "name": "cv_reactjs",
   "version": "1.0.0",
-  "description": "Curriculum Vitae in ReactJs",
+  "description": "Rafael De Jongh's Curriculum Vitae in ReactJs",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules\.bin\webpack -d,
-    "start": "node_modules\.bin\webpack -d --watch"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "express": "^4.16.2",
+    "http-server": "^0.10.0",
     "qrcode.react": "^0.7.2"
   },
   "devDependencies": {

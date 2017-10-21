@@ -249,11 +249,11 @@ progress:after{
 		position:absolute;
 		z-index:1;
 		background:#1e1f21;
-		width:5vw;
-		height:5vw;
+		width:6vw;
+		height:6vw;
 		border-radius:100%;
-		top:calc(50% - 2.5vw);
-		left:calc(50% - 2.5vw);
+		top:calc(50% - 3vw);
+		left:calc(50% - 3vw);
 		object-fit:contain;
 }
 /*Information

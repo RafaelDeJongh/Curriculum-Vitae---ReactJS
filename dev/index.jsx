@@ -1,10 +1,11 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var QRCode = require('qrcode.react');
+/*var Styles = require('style.scss');*/
 
 function CV(props) {
 	const personalia = props.pContent.map(info => (
-		<aside key={info}>
+		<aside key="1">
 			<header>
 				<figure id="profile-fig">
 					<img id="profile-img" src={`${info.picture}`} alt={`${info.name} - ${info.title}`} />
@@ -40,14 +41,14 @@ function CV(props) {
 			<footer id="qr">
 				<div id="qr-code">
 					<img id="qr-logo" src={`${info.qrlogo}`} alt="QR Logo" />
-					<QRCode value={`mailto:${info.qr}`} bgColor="#1e1f21" fgColor="#fff" size={256} />
+					<QRCode value={`${info.qr}`} bgColor="#1e1f21" fgColor="#fff" size={256} level="M"/>
 				</div>
 				<a href={`${info.qr}`} target="_blank">{info.qr.replace(/(^\w+:|^)\/\//,'').replace(/\/+$/,'')}</a>
 			</footer>
 		</aside>
 	));
 	const experience = props.eContent.map(info => (
-		<article key={info}>
+		<article key="1">
 			<section id="education">
 				<h2>Education</h2>
 				{info.cBoxHead.map(info => (
