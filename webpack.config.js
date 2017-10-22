@@ -8,7 +8,7 @@ var APP_DIR = path.resolve(__dirname,'dev');
 
 var config ={
 	entry:[
-	"webpack-dev-server/client?http://localhost:3000",
+	//"webpack-dev-server/client?http://localhost:3000",
 	APP_DIR + '/index.jsx'
 	],
 	output:{

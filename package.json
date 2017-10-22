@@ -4,7 +4,8 @@
   "description": "Rafael De Jongh's Curriculum Vitae in ReactJs",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack --env.prod"
   },
   "repository": {
     "type": "git",

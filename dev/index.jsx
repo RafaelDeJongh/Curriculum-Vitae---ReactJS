@@ -111,7 +111,7 @@ const pContent = [
 	{
 		name:"Rafaël De Jongh",
 		title:"Web Developer | 3D Artist",
-		picture:"https://www.ap-valley-gdm.ga/wp-content/uploads/2017/09/RafaelDeJongh-512.jpg",
+		picture:"images/profilepicture.jpg",
 		personalia:[
 			{
 				birthday:"12 September 1994",
@@ -128,8 +128,8 @@ const pContent = [
 			{id:3,language:"French",level:"A2",knowledge:40}
 		],
 		qr:"https://www.RafaelDeJongh.com/",
-		qrlogo:"https://ap-images.ga/up/2017/10/16145828-logordj.svg"
-		//qr:"https://ap-images.ga/up/2017/10/15023120-QRCodeWithLogoWhite.svg"
+		qrlogo:"images/qrcode-logo.svg",
+		qrfb:"images/qrcode.svg"
 	}
 ];
 const eContent = [
