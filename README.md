@@ -1,4 +1,4 @@
-Curriculum Vitae build with ReactJS
+### Rafaël De Jongh's Curriculum Vitae build with ReactJS
 
 Dev Build: https://rafaeldejongh.github.io/Curriculum-Vitae-ReactJS
 
