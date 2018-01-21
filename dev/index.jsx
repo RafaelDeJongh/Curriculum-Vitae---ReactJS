@@ -51,7 +51,7 @@ function CV(props) {
 		<article key="1">
 			<section id="education">
 				<h2>Education</h2>
-				{info.cBoxHead.map(info => (
+				{info.cBoxHead.reverse().map(info => (
 				<section className="infItem" key={info.id}>
 					<div className="infDesc">
 						<h3>{info.school}</h3>
@@ -63,7 +63,7 @@ function CV(props) {
 			</section>
 			<section id="work-experience">
 				<h2>Work Experience</h2>
-				{info.cBoxMain.map(info => (
+				{info.cBoxMain.reverse().map(info => (
 				<section className="infItem" key={info.id}>
 					<div className="infDesc">
 						<h3>{info.work}</h3>
@@ -137,75 +137,75 @@ const eContent = [
 		cBoxHead:[
 			{
 				id:1,
-				school:"Google Digitaal Atelier",
-				course:"Google Online Marketing Certificate.",
-				yearStart:"",
-				yearEnd:"10/2017"
+				school:"Stedelijk Lyceum Olympiade",
+				course:"Technical Education Tourism, Reception and PR.",
+				yearStart:"2006",
+				yearEnd:"2011"
 			},
 			{
 				id:2,
-				school:"AP Hogeschool Antwerpen",
-				course:"Professional Bachelor Crossmedia-Design.",
-				yearStart:"2014",
-				yearEnd:"2018"
-			},
-			{
-				id:3,
 				school:"Stedelijk Lyceum Cadix",
 				course:"Technical Education Multimedia.",
 				yearStart:"2011",
 				yearEnd:"2014"
 			},
 			{
+				id:3,
+				school:"AP Hogeschool Antwerpen",
+				course:"Professional Bachelor Crossmedia-Design.",
+				yearStart:"2014",
+				yearEnd:"2018"
+			},
+			{
 				id:4,
-				school:"Stedelijk Lyceum Olympiade",
-				course:"Technical Education Tourism, Reception and PR.",
-				yearStart:"2006",
-				yearEnd:"2011"
+				school:"Google Digitaal Atelier",
+				course:"Google Online Marketing Certificate.",
+				yearStart:"",
+				yearEnd:"10/2017"
 			}
 		],
 		cBoxMain:[
 			{
 				id:1,
-				work:"MyRetailJungle.com",
-				description:"WordPress website for an online platform for retail experts.",
-				yearStart:"",
-				yearEnd:"09/2017"
+				work:"Gamebanana.com",
+				description:"Head of 3D Art and Moderator.",
+				yearStart:"2013",
+				yearEnd:"Present"
 			},
 			{
 				id:2,
-				work:"UKLederwaren.be",
-				description:"WordPress WooCommerce Webshop with B2B functionality.",
+				work:"Steam Workshop Paid Mods: Gifts of Akatosh",
+				description:"A personal collaboration with Valve and Bethesda to create mods for Skyrim.",
 				yearStart:"",
-				yearEnd:"07/2017"
+				yearEnd:"06/2015"
 			},
 			{
 				id:3,
-				work:"SandhillSstudio.be",
-				description:"WordPress website for a startup production house.",
+				work:"Oconceptstore.be",
+				description:"WordPress webshop made with WooCommerce.",
 				yearStart:"",
-				yearEnd:"07/2017"
+				yearEnd:"06/2016"
 			},
 			{
 				id:4,
-				work:"DDCare.be",
-				description:"WordPress website for a Belgian dentist practice.",
+				work:"Smartgoldhamilton.ca",
+				description:"WordPress website for a physical gold store in Canada.",
 				yearStart:"",
-				yearEnd:"06/2017"
+				yearEnd:"07/2016"
 			},
 			{
 				id:5,
-				work:"Safegold.ca",
-				description:"WordPress website for a physical gold store in Canada.",
-				yearStart:"",
-				yearEnd:"06/2017"
+				work:"APCOA Parking",
+				description:"Student job as a parking attendant in Antwerp.",
+				yearStart:"2014",
+				yearEnd:"2016"
 			},
 			{
 				id:6,
-				work:"Carlino-FGS.com",
-				description:"WordPress WooCommerce webshop with a focus on a POS system.",
+				work:"JohannesDeJongh.com",
+				description:"WordPress portfolio website for a cinematographer and motion Graphics Artist.",
 				yearStart:"",
-				yearEnd:"05/2017"
+				yearEnd:"01/2017"
 			},
 			{
 				id:7,
@@ -216,46 +216,53 @@ const eContent = [
 			},
 			{
 				id:8,
-				work:"JohannesDeJongh.com",
-				description:"WordPress portfolio website for a cinematographer and motion Graphics Artist.",
+				work:"Carlino-FGS.com",
+				description:"WordPress WooCommerce webshop with a focus on a POS system.",
 				yearStart:"",
-				yearEnd:"01/2017"
+				yearEnd:"05/2017"
 			},
 			{
 				id:9,
-				work:"APCOA Parking",
-				description:"Student job as a parking attendant in Antwerp.",
-				yearStart:"2014",
-				yearEnd:"2016"
+				work:"Safegold.ca",
+				description:"WordPress website for a physical gold store in Canada.",
+				yearStart:"",
+				yearEnd:"06/2017"
 			},
 			{
 				id:10,
-				work:"Smartgoldhamilton.ca",
-				description:"WordPress website for a physical gold store in Canada.",
+				work:"DDCare.be",
+				description:"WordPress website for a Belgian dentist practice.",
 				yearStart:"",
-				yearEnd:"07/2016"
+				yearEnd:"06/2017"
 			},
 			{
 				id:11,
-				work:"Oconceptstore.be",
-				description:"WordPress webshop made with WooCommerce.",
+				work:"SandhillSstudio.be",
+				description:"WordPress website for a startup production house.",
 				yearStart:"",
-				yearEnd:"06/2016"
+				yearEnd:"07/2017"
 			},
 			{
 				id:12,
-				work:"Steam Workshop Paid Mods: Gifts of Akatosh",
-				description:"A personal collaboration with Valve and Bethesda to create mods for Skyrim.",
+				work:"UKLederwaren.be",
+				description:"WordPress WooCommerce Webshop with B2B functionality.",
 				yearStart:"",
-				yearEnd:"06/2015"
+				yearEnd:"07/2017"
 			},
 			{
 				id:13,
-				work:"Gamebanana.com",
-				description:"Head of 3D Art and Moderator.",
-				yearStart:"2013",
-				yearEnd:"Present"
+				work:"MyRetailJungle.com",
+				description:"WordPress website for an online platform for retail experts.",
+				yearStart:"",
+				yearEnd:"09/2017"
 			},
+			{
+				id:14,
+				work:"tZotKiekske.be",
+				description:"WordPress website for a chicken restaurant",
+				yearStart:"",
+				yearEnd:"12/2017"
+			}
 		],
 		cBoxFooter:[{
 			cListLT:"Web Development",

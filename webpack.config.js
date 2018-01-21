@@ -1,8 +1,6 @@
-//node_modules\.bin\webpack -d --watch
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 var BUILD_DIR = path.resolve(__dirname,'js');
 var APP_DIR = path.resolve(__dirname,'dev');
 
