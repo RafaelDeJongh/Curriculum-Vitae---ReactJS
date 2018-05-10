@@ -11,7 +11,7 @@ var config ={
 	],
 	output:{
 		path:BUILD_DIR,
-		filename:'index.js',
+		filename:'index.jsx',
 		publicPath:'/'
 	},
 	module:{

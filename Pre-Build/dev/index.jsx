@@ -162,7 +162,7 @@ const eContent = [
 				course:"Google Online Marketing Certificate.",
 				yearStart:"",
 				yearEnd:"10/2017"
-			}
+			},
 		],
 		cBoxMain:[
 			{
@@ -259,10 +259,38 @@ const eContent = [
 			{
 				id:14,
 				work:"tZotKiekske.be",
-				description:"WordPress website for a chicken restaurant",
+				description:"WordPress website for a chicken restaurant.",
 				yearStart:"",
 				yearEnd:"12/2017"
-			}
+			},
+			{
+				id:15,
+				work:"NendoAddicts.be",
+				description:"WordPress catalogus website for anime figurines.",
+				yearStart:"",
+				yearEnd:"01/2018"
+			},
+			{
+				id:16,
+				work:"Lonely Alien",
+				description:"A perfect internship where I developed various Online Web Development skills.",
+				yearStart:"01",
+				yearEnd:"04/2018"
+			},
+			{
+				id:17,
+				work:"MIMU-TankLeasing.com",
+				description:"WordPress Elementor website as an Internship assignment from Lonely Alien.",
+				yearStart:"",
+				yearEnd:"03/2018"
+			},
+			{
+				id:18,
+				work:"TheMovieLot.com",
+				description:"WordPress E-Commerce site as an Internship assignment from Lonely Alien.",
+				yearStart:"",
+				yearEnd:"04/2018"
+			},
 		],
 		cBoxFooter:[{
 			cListLT:"Web Development",
